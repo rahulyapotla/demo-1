@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body onload="generateRandomNumber()">
+
+<div class="content">
+    <img src="https://img.freepik.com/free-vector/happy-birthday-lettering-with-golden-letters_52683-35047.jpg?size=626&ext=jpg"/>
+    <button onclick="generateRandomNumber()">Reload Page</button>
+    <p id="random-number"></p>
+
+    <script>
+        function generateRandomNumber() {
+            const randomNumber = Math.floor(Math.random() * 100) + 1;
+            document.getElementById('random-number').innerText = `${randomNumber} Years Old!`;
+        }
+    </script>
+</div>
+
+</body>
+</html>
